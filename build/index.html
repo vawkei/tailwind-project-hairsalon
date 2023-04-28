@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Kendra's Place</title>
   </head>
-  <body class="min-h-screen bg-gray-700">
-    <header class="fixed top-0 z-10 w-full bg-gray-800 text-white">
+  <body class="min-h-screen bg-gray-700 text-white">
+    <header class="fixed top-0 z-10 h-20 w-full bg-gray-800 text-white">
       <section
         class="mx-auto flex max-w-4xl items-center justify-between p-4"
         id="header">
@@ -51,16 +51,21 @@
 
       <hr class="text-gray-400" />
       <section
-        class="mx-auto max-w-4xl"
+        class="mx-auto mb-12 max-w-4xl"
         id="about-section"
         aria-label="main-about-section">
-        <div class=" mt-8 text-center">
-          <h1 class="text-orange-300 text-4xl font-bold">About Us</h1>
+        <div class="mt-8 text-center">
+          <h1 class="text-4xl font-bold text-orange-300">About Us</h1>
         </div>
 
-        <section class="flex items-center p-2" aria-label="second-about-section">
-          <figure class=" w-1/2 p-8">
-            <img class="rounded-lg shadow-2xl transition duration-500 ease-out hover:shadow-lg" src="img/10.jpg" alt="" />
+        <section
+          class="flex items-center p-2"
+          aria-label="second-about-section">
+          <figure class="w-1/2 p-4">
+            <img
+              class="rounded-lg shadow-2xl transition duration-500 ease-out hover:shadow-lg"
+              src="img/10.jpg"
+              alt="" />
             <h1 class="text-white">Years <br />Experience</h1>
           </figure>
 
@@ -73,7 +78,9 @@
               We specialize in not only female hair but to also that of the
               males.Here at Kendra's place.
             </h3>
-            <button class="bg-orange-300 py-1 px-3 rounded-md mt-4">Click Here to Read More</button>
+            <button class="mt-4 rounded-md bg-orange-300 px-3 py-1">
+              Click Here to Read More
+            </button>
             <section class="hidden">
               <h3>Our Other Areas of speciality include:</h3>
               <p>Male Hair Barbing</p>
@@ -86,58 +93,140 @@
       </section>
       <hr class="text-gray-400" />
 
-      <section id="gallery-section" class="mx-auto max-w-4xl"
-      aria-label="main-services-section">
-
-            <div class=" mt-8 text-center">
-                <h1 class="text-orange-300 text-4xl font-bold mb-4">Our Services</h1>
-                <p class="text-2xl">We are dedicated to providing you with the best possible experience. Our team of experts is here to help you everystep of the way.</p>
-            </div>
+      <section
+        id="gallery-section"
+        class="mx-auto mb-12 max-w-4xl"
+        aria-label="main-services-section">
+        <div class="mt-8 text-center">
+          <h1 class="mb-4 text-4xl font-bold text-orange-300">Our Services</h1>
+          <p class="text-2xl">
+            We are dedicated to providing you with the best possible experience.
+            Our team of experts is here to help you everystep of the way.
+          </p>
+        </div>
 
         <section class="items-center p-2" aria-label="second-services-section">
-            <ul class="flex items-center gap-4 p-4" id="first-services-ul">
-                <li>
-                    <img src="img/hairsalon (7).jpeg" class="w-full h-48 shadow-2xl rounded-lg" alt="">
-                </li>
-                <li>
-                    <img src="img/salon area 2.jpeg" class="w-full h-48 shadow-2xl rounded-lg" alt="">
-                </li>
-                <li>
-                    <img src="img/massage acupuncture .jpeg" class="w-full h-48 shadow-2xl rounded-lg" alt="">
-                </li>
-            </ul>
-            
-            <ul class="flex items-center gap-4 p-4" id="second-services-ul">
-                <li>
-                    <img src="img/salon beard .jpeg" class="w-full h-48 shadow-2xl rounded-lg" alt="">
-                </li>
-                <li>
-                    <img src="img/salon comb.jpeg" class="w-full h-48 shadow-2xl rounded-lg" alt="">
-                </li>
-                <li>
-                    <img src="img/salon haircut 2.jpeg" class="w-full h-48 shadow-2xl rounded-lg" alt="">
-                </li>
-            </ul>
-            <ul class=" hidden sm:flex items-center gap-4 p-4 " id="third-services-ul">
-                <li>
-                    <img src="img/hairsalon (2).jpeg" class="w-72 h-52 shadow-2xl rounded-lg" alt="">
-                </li>
-                <li>
-                    <img src="img/salon haircut 1.jpeg" class="w-72 h-52 shadow-2xl rounded-lg" alt="">
-                </li>
-                <li>
-                    <img src="img/salon cut.jpeg" class="w-72 h-52 shadow-2xl rounded-lg" alt="">
-                </li>
-            </ul>
+          <ul class="flex items-center gap-4 p-4" id="first-services-ul">
+            <li>
+              <img
+                src="img/hairsalon (7).jpeg"
+                class="h-48 w-full rounded-lg shadow-2xl"
+                alt="" />
+            </li>
+            <li>
+              <img
+                src="img/salon area 2.jpeg"
+                class="h-48 w-full rounded-lg shadow-2xl"
+                alt="" />
+            </li>
+            <li>
+              <img
+                src="img/massage acupuncture .jpeg"
+                class="h-48 w-full rounded-lg shadow-2xl"
+                alt="" />
+            </li>
+          </ul>
+
+          <ul class="flex items-center gap-4 p-4" id="second-services-ul">
+            <li>
+              <img
+                src="img/salon beard .jpeg"
+                class="h-48 w-full rounded-lg shadow-2xl"
+                alt="" />
+            </li>
+            <li>
+              <img
+                src="img/salon comb.jpeg"
+                class="h-48 w-full rounded-lg shadow-2xl"
+                alt="" />
+            </li>
+            <li>
+              <img
+                src="img/salon haircut 2.jpeg"
+                class="h-48 w-full rounded-lg shadow-2xl"
+                alt="" />
+            </li>
+          </ul>
+          <ul
+            class="hidden items-center gap-4 p-4 sm:flex"
+            id="third-services-ul">
+            <li>
+              <img
+                src="img/hairsalon (2).jpeg"
+                class="h-52 w-72 rounded-lg shadow-2xl"
+                alt="" />
+            </li>
+            <li>
+              <img
+                src="img/salon haircut 1.jpeg"
+                class="h-52 w-72 rounded-lg shadow-2xl"
+                alt="" />
+            </li>
+            <li>
+              <img
+                src="img/salon cut.jpeg"
+                class="h-52 w-72 rounded-lg shadow-2xl"
+                alt="" />
+            </li>
+          </ul>
         </section>
       </section>
 
       <hr class="text-gray-400" />
-      <section>
-        <div class=" mt-8 text-center">
-            <h1 class="text-orange-300 text-4xl font-bold mb-4">Testimonials</h1>
+      <section
+        class="max-w-4x mx-auto mb-12"
+        id="gallery-section"
+        aria-label="main-testimonials-section">
+        <div class="mt-8 text-center">
+          <h1 class="mb-4 text-4xl font-bold text-orange-300">Testimonials</h1>
         </div>
+
+        <section id="second-testimonial-section">
+          <section
+            class="bg-gray-900 p-10"
+            id="third-testimonial-section">
+
+            <img src="img/salon testimonials 1.jpeg" class="h-20 hover:scale-x-150" alt="" />
+            <blockquote class="relative mt-4">
+              <p
+                class="text-xl before:absolute before:-left-6 before:-top-2 before:text-6xl before:font-normal before:opacity-10 before:content-['\201C'] after:absolute after:-bottom-0 after:text-6xl after:font-normal after:opacity-10 after:content-['\201D']">
+                The Hair stylists at Kendra's Place are super, they are good at
+                what they do. I can say with all confidence, that Kendra's Place
+                is the best in town.
+              </p>
+              <p class="text-end text-orange-300">&#8212; Eloho Mathews</p>
+            </blockquote>
+
+            <img src="img/salon testimonials 2.jpeg" class="h-20 hover:scale-x-150" alt="" />
+            <blockquote class="relative mt-4">
+              <p
+              class="text-xl before:absolute before:-left-6 before:-top-2 before:text-6xl before:font-normal before:opacity-10 before:content-['\201C'] after:absolute after:-bottom-0 after:text-6xl after:font-normal after:opacity-10 after:content-['\201D']">
+                I have been going to this hair salon for 5 years now and I
+                wouldn't trust anyone else with my hair! The stylists are all
+                incredibly talented and always take time to listen to what I
+                want. I have never left there with regret. They simply deliver .
+              </p>
+              <p class="text-end text-orange-300">&#8212; Kevwe Josephs</p>
+            </blockquote>
+
+            <img src="img/salon testimonials 4.jpeg" class="h-20 hover:scale-x-150" alt="" />
+            <blockquote class="relative mt-4">
+              <p
+              class="text-xl before:absolute before:-left-6 before:-top-2 before:text-6xl before:font-normal before:opacity-10 before:content-['\201C'] after:absolute after:-bottom-0 after:text-6xl after:font-normal after:opacity-10 after:content-['\201D']"
+                >
+                I came to this salon after a terrible experience at another
+                salon and I was blown away by the level of service I received.
+                The stylist was so patient and understanding with me. I will
+                most definately recommend Kendra's Place to anyone :male or
+                female who wants to get his or her hair fixed. They are the best
+                by miles.
+              </p>
+              <p class="text-end text-orange-300">&#8212; Ejovi Michaels.</p>
+            </blockquote>
+          </section>
+        </section>
       </section>
+      <hr class="text-gray-400" />
     </main>
   </body>
 </html>
