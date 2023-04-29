@@ -4,20 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-hMFaxcQ+kKjTtYwTysnMQPHoeUDyNxPBLn8E6+xX9xCKxj+vcL+ywW8Jv+ezA2Qyuv1nM+6Q8UvNTqXd6KO+Zg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+
     <link rel="stylesheet" href="css/style.css" />
     <title>Kendra's Place</title>
   </head>
   <body class="min-h-screen bg-gray-700 text-white">
     <header class="fixed top-0 z-10 h-20 w-full bg-gray-800 text-white">
       <section
-        class="mx-auto flex max-w-4xl items-center justify-between p-4"
+        class="mx-auto flex max-w-4xl items-center justify-between p-4 scroll-m-10"
         id="header">
-        <h1 class="text-3xl font-bold"><a href="#hero">Kendra's Place</a></h1>
+        <h1 class="text-3xl font-bold"><a href="#hero"> 🪮 Kendra's Place</a></h1>
         <nav>
           <ul class="flex gap-4 text-lg">
             <li><a href="#about">About</a></li>
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#working">Working Hours</a></li>
             <li><a href="#contact">Contact Us</a></li>
           </ul>
         </nav>
@@ -27,9 +34,13 @@
       </section>
     </header>
 
-    <main class="mx-auto mt-16 max-w-4xl">
-      <section class="flex items-center p-6" id="hero-section">
-        <article class="mt-10 w-1/2 p-8">
+    <main class="mx-auto mt-28  max-w-4xl">
+      <section class="p-4 scroll-mt-40" id="hero">
+      <div class=" text-center">
+        <h1 class=" mb-4 -mt-1 text-4xl font-bold text-orange-300">Welcome To Kendra's Place</h1>
+      </div>
+      <section class=" -mt-8 flex items-center p-6" id="second-hero-section">     
+        <article class=" w-1/2 p-8">
           <h1 class="text-4xl font-bold">
             Getting you to
             <span class="text-orange-300">look attractive</span> is our goal
@@ -44,15 +55,15 @@
         </article>
 
         <img
-          class="mt-10 w-1/2 rounded-lg shadow-2xl transition duration-500 ease-out hover:shadow-lg"
+          class="mt-2 w-1/2 h-full rounded-lg shadow-2xl transition duration-500 ease-out hover:shadow-lg"
           src="img/salon front.jpeg"
           alt="" />
       </section>
-
-      <hr class="text-gray-400" />
+    </section>   
+      <hr class="text-gray-950" />
       <section
-        class="mx-auto mb-12 max-w-4xl"
-        id="about-section"
+        class="mx-auto mb-12 max-w-4xl scroll-mt-20 "
+        id="about"
         aria-label="main-about-section">
         <div class="mt-8 text-center">
           <h1 class="text-4xl font-bold text-orange-300">About Us</h1>
@@ -91,14 +102,14 @@
           </article>
         </section>
       </section>
-      <hr class="text-gray-400" />
+      <hr class="text-gray-950" />
 
       <section
-        id="gallery-section"
-        class="mx-auto mb-12 max-w-4xl"
+        id="gallery"
+        class="mx-auto mb-12 max-w-4xl scroll-mt-24"
         aria-label="main-services-section">
         <div class="mt-8 text-center">
-          <h1 class="mb-4 text-4xl font-bold text-orange-300">Our Services</h1>
+          <h1 class="mb-4 text-4xl font-bold text-orange-300">Our Gallery</h1>
           <p class="text-2xl">
             We are dedicated to providing you with the best possible experience.
             Our team of experts is here to help you everystep of the way.
@@ -172,10 +183,10 @@
         </section>
       </section>
 
-      <hr class="text-gray-400" />
+      <hr class="text-gray-950" />
       <section
-        class="max-w-4x mx-auto mb-12"
-        id="gallery-section"
+        class="max-w-4x mx-auto mb-12 scroll-mt-28"
+        id="testimonials"
         aria-label="main-testimonials-section">
         <div class="mt-8 text-center">
           <h1 class="mb-4 text-4xl font-bold text-orange-300">Testimonials</h1>
@@ -226,7 +237,100 @@
           </section>
         </section>
       </section>
-      <hr class="text-gray-400" />
+      <hr class="text-gray-950" />
+
+      <section class="mx-auto max-w-4xl mb-12 scroll-mt-36" id="working" aria-label="main-workinghrs-session">
+        
+        <div class="mt-8 text-center">
+          <h1 class="mb-4 text-4xl font-bold text-orange-300">Working Hours</h1>
+        </div>
+
+        <section class="mx-auto max-w-4xl  flex gap-2" aria-label="second-workinghrs-section">
+          <img src="img/salon area 4.jpeg" class="w-1/2 rounded-xl" alt="">
+
+          <div class="bg-black p-8 w-1/2 rounded-xl">
+            <h2 class="text-center p-4 text-xl">Working Hours</h2>
+            <p class="p-1">Our hours are flexible and convinient.</p>
+            <p class="p-1">Opening hours:</p>
+            <div class="flex items-center justify-between border-b border-b-yellow-50 p-1 pt-4">
+              <h3>Weekdays</h3>
+              <p>9AM-9PM</p>
+            </div>
+            <div class="flex items-center justify-between border-b border-b-yellow-50 p-1">
+              <h3>Weekends</h3>
+              <p>12PM-7PM</p>
+            </div>
+          </div>
+
+        </section>
+
+      </section>
+
+      <hr class="text-gray-950" >
+
+      <section class="mt-24 max-w-2xl mx-auto p-4 scroll-mt-40" id="contact">
+        <h1 class="mb-4 text-2xl font-bold text-orange-300 text-center">
+          Send Us A Message ...
+        </h1>
+        <section class="" >
+          <form action="" class="p-1">
+            <div class="mb-2 ">
+              <label for="" class="text-xl font-bold mb-2" id="label">Name :</label>
+              <input type="text" class="w-full p-1 rounded-lg border-gray-300 text-inherit " id="input" />
+            </div>
+            <div>
+              <label for="" class="text-xl font-bold mb-2" id="label">Message:</label>
+              <textarea
+                name="message"
+                id="message"
+                rows="5"
+                class="w-full p-1 rounded-lg border-gray-300 text-inherit"
+                id="input"></textarea>
+            </div>
+            <div class="text-center">
+              <button class="mt-4 rounded-md bg-orange-300 px-3 py-1 cursor-pointer hover:bg-transparent">
+                Submit
+              </button>
+            </div>
+          </form>
+        </section>
+      </section>
+      <hr class="text-gray-950" >
+
     </main>
+    <section class="bg-black w-full" id="contact" aria-label="footer-section">
+      <div class="mt-8  ">
+        <ul class=" flex items-center  justify-center p-8 gap-6">
+          <li>
+            <div  class="flex gap-1 items-center hover:text-orange-300">
+              <i class="fa fa-map-marker"></i>
+              <p>AK-47 street, 007 avenue.</p>
+            </div>
+          </li>
+          <li>
+            <div >
+             <a href="tel: 08061521091" class="flex items-center gap-1 hover:text-orange-300" ><i class="fa fa-phone"></i><p>+234 706 923 9017</p></a> 
+            </div>
+          </li>
+          <div class="flex items-center gap-4">
+             <li class="text-2xl hover:transition duration-500 ease-out hover:scale-150"> <a href=""><i class="fa fa-instagram "></i></a> </li>
+             
+             <li class="text-2xl hover:transition duration-500 ease-out hover:translate-x-5"><a href=""><i class="fa fa-github"></i></a></li>      
+          </div>
+        </ul>
+      </div>
+      <div class="text-center pb-4" id="year">&copy;</div>
+    </section>
+    <script src="index.js"></script>
   </body>
 </html>
+          <!-- <i class="fa-brands fa-twitter"></i>
+          <i class="fa fa-instagram "></i>
+          <i class="fa fa-github"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa fa-phone"></i>
+          <i class="fa-solid fa-envelope"></i>
+          <i class="fa-regular fa-location-dot"></i>
+        
+          <a href = 'https://www.instagram.com/kendrawilkinson/?hl=en'= class="fa fa-instagram" target="_blank"></a>
+          <li> <i class="fa fa-twitter"></i> </li>
