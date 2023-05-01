@@ -43,8 +43,8 @@ form.addEventListener("submit", (e) => {
   const data = { email: email.value, name: Name.value, message: message.value };
   // console.log(data)
   // form.reset()
-  const serviceId = "service_gz0qd0l";
-  const templateId = "template_7g4jn4s";
+  const serviceId = process.env.SERVICE_ID;
+  const templateId = process.env.TEMPLATE_ID;
   emailjs
     .send(serviceId, templateId, data)
     .then((res) => {
