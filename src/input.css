@@ -11,3 +11,18 @@
         min-height: calc(100vh - 68px);
     }
 }
+
+.image-enlarged{
+    @apply sm:fixed sm:top-1/2 sm:left-1/2 sm:transform sm:-translate-x-1/2 sm:-translate-y-1/2 sm:z-50;
+            max-width: 90vw;
+            max-height: 90vh;
+            /* this is the parent div class to be created */
+}
+.image-enlarged img{
+    @apply sm:max-w-full sm:max-h-full sm:object-contain
+    /* this is the image tag class: its taking the full width and height of its parent container div*/
+}
+.image-enlarged-backdrop{
+    
+    @apply sm:fixed sm:inset-0 sm:bg-gray-900  sm:bg-opacity-50 z-10
+}
