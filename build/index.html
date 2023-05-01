@@ -12,14 +12,14 @@
 
     <link rel="stylesheet" href="css/style.css" />
     <title>Kendra's Place</title>
-
+    <script src="index.js" defer></script>
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
     </script>
     <script type="text/javascript">
         (function(){
           // emailjs.init("YOUR_PUBLIC_KEY");
-          emailjs.init(process.env.PUBLIC_KEY);
+          emailjs.init("casqweBqdbAcmYM_4");
         })();
     </script>
   </head>
@@ -57,8 +57,10 @@
       </section>
     </header>
 
-    <main class="mx-auto mt-28  max-w-4xl">
-      <section class="p-4 scroll-mt-40 widescreen:section-min-height tallscreen:section-min-height" id="hero">
+    <!-- <main class="mx-auto mt-28  max-w-4xl animate-bounce 20s linear infinite"> -->
+      <main class="mx-auto mt-28  max-w-4xl">
+        <h1 class="fixed bottom-10 z-10 text-white animate-spin 1s infinite">HouseofwebZ</h1>
+      <section class="p-4 scroll-mt-40 widescreen:section-min-height tallscreen:section-min-height animate-" id="hero">
       <div class=" text-center">
         <h1 class=" mb-4 -mt-1 text-4xl font-bold text-orange-300">Welcome To Kendra's Place</h1>
       </div>
@@ -113,7 +115,7 @@
               We specialize in not only female hair but to also that of the
               males.Here at Kendra's place.
             </h3>
-            <button class="mt-4 rounded-md bg-orange-300 px-3 py-1" id="button">
+            <button class="mt-4 rounded-md bg-orange-300 px-3 py-1 hover:bg-transparent transition duration-500 ease-out hover:text-yellow-500 hover:transition hover:duration-500 hover:ease-out" id="button">
               Click Here to Read More
             </button>
             <section class="hidden ml-6 p-4 absolute top-100% right-8 sm:right-20" id="hidden">
@@ -140,25 +142,29 @@
           </p>
         </div>
 
-        <section class="items-center p-2 section-min-height" aria-label="second-services-section">
+        <section class="items-center p-2 section-min-height" id=""  aria-label="second-services-section">
           <ul class="flex flex-col   sm:flex sm:flex-row sm:items-center gap-4 p-4" id="first-services-ul">
             <li>
               <img
                 src="img/hairsalon (7).jpeg"
-                class="h-48 w-full rounded-lg shadow-2xl"
-                alt="" />
+                class="h-48 w-full rounded-lg shadow-2xl sm:hover:transform sm:hover:scale-x-150"
+                alt=""
+                id="image" />
+                
             </li>
             <li>
               <img
                 src="img/salon area 2.jpeg"
-                class="h-48 w-full rounded-lg shadow-2xl"
-                alt="" />
+                class="h-48 w-full rounded-lg shadow-2xl sm:hover:transform sm:hover:scale-x-150"
+                alt="" 
+                id="image"/>
             </li>
             <li>
               <img
                 src="img/massage acupuncture .jpeg"
-                class="h-48 w-full rounded-lg shadow-2xl"
-                alt="" />
+                class="h-48 w-full rounded-lg shadow-2xl sm:hover:transform sm:hover:scale-x-150"
+                alt="" 
+                id="image"/>
             </li>
           </ul>
 
@@ -166,20 +172,23 @@
             <li>
               <img
                 src="img/salon beard .jpeg"
-                class="h-48 w-full rounded-lg shadow-2xl"
-                alt="" />
+                class="h-48 w-full rounded-lg shadow-2xl sm:hover:transform sm:hover:scale-x-150"
+                alt="" 
+                id="image"/>
             </li>
             <li>
               <img
                 src="img/salon comb.jpeg"
-                class="h-48 w-full rounded-lg shadow-2xl"
-                alt="" />
+                class="h-48 w-full rounded-lg shadow-2xl sm:hover:transform sm:hover:scale-x-150"
+                alt="" 
+                id="image"/>
             </li>
             <li>
               <img
                 src="img/salon haircut 2.jpeg"
-                class="h-48 w-full rounded-lg shadow-2xl"
-                alt="" />
+                class="h-48 w-full rounded-lg shadow-2xl sm:hover:transform sm:hover:scale-x-150"
+                alt="" 
+                id="image"/>
             </li>
           </ul>
           <ul
@@ -188,20 +197,23 @@
             <li>
               <img
                 src="img/hairsalon (2).jpeg"
-                class="h-52 w-72 rounded-lg shadow-2xl"
-                alt="" />
+                class="h-52 w-72 rounded-lg shadow-2xl sm:hover:transform sm:hover:scale-x-150"
+                alt="" 
+                id="image"/>
             </li>
             <li>
               <img
                 src="img/salon haircut 1.jpeg"
-                class="h-52 w-72 rounded-lg shadow-2xl"
-                alt="" />
+                class="h-52 w-72 rounded-lg shadow-2xl sm:hover:transform sm:hover:scale-x-150"
+                alt="" 
+                id="image"/>
             </li>
             <li>
               <img
                 src="img/salon cut.jpeg"
-                class="h-52 w-72 rounded-lg shadow-2xl"
-                alt="" />
+                class="h-52 w-72 rounded-lg shadow-2xl sm:hover:transform sm:hover:scale-x-150"
+                alt="" 
+                id="image"/>
             </li>
           </ul>
         </section>
@@ -275,7 +287,7 @@
           <div class="bg-black w-full p-16 sm:p-8 sm:w-1/2 rounded-xl">
             <h2 class="text-center p-4 text-4xl">Working Hours</h2>
             <p class="p-1 mt-8 text-center text-2xl">Our hours are flexible and convinient.</p>
-            <p class="p-1 text-xl text-center text-gray-800 hover:text-white transition duration-100 ease-out">Opening hours:</p>
+            <p class="p-1 text-xl text-center text-red-300 animate-pulse">Opening hours:</p>
             <div class="flex items-center mt-4 text-center justify-between border-b border-b-yellow-50 p-1 pt-4">
               <h3>Weekdays</h3>
               <p>9AM-9PM</p>
@@ -297,14 +309,14 @@
           Send Us A Message ...
         </h1>
         <section class="mt-16 overflow-hidden" >
-          <form action="mailto: vawkeicodewebz.com" class="p-1">
+          <form action="" class="p-1" id="signup">
             <div class=" mt-0  ">
               <label for="" class="text-xl font-bold mb-2" id="label">Name :</label>
-              <input type="text" placeholder="please enter your name here!" class="w-full p-1 rounded-lg border-gray-300 text-inherit text-black " id="name" />
+              <input type="text" placeholder="please enter your name here!" class="w-full p-1 rounded-lg border-gray-300  text-black " id="name" />
             </div>
             <div class="mt-6 mb-2 ">
               <label for="" class="text-xl font-bold mb-2" id="label">E-mail :</label>
-              <input type="text" placeholder="please enter your email address here!" class="w-full p-1 rounded-lg border-gray-300 text-inherit text-black" id="emailAddress" />
+              <input type="text" placeholder="please enter your email address here!" class="w-full p-1 rounded-lg border-gray-300  text-black" id="email" />
             </div>
             <div class="mt-6">
               <label for="" class="text-xl font-bold mb-2" id="label">Message:</label>
@@ -312,11 +324,12 @@
                 name="message"
                 id="message"
                 rows="5"
-                class="w-full p-1 rounded-lg border-gray-300 text-inherit text-black"
-                id="input"></textarea>
+                class="w-full p-1 rounded-lg border-gray-300 text-black"
+                ></textarea>
             </div>
+            <div class="text-red-400 hidden" id="error-message">Inputs can't be empty</div>
             <div class="text-center">
-              <button class="mt-12 rounded-md bg-orange-300 px-3 py-1 cursor-pointer hover:bg-transparent" onclick= "sendMail()" >
+              <button class="mt-12 rounded-md bg-orange-300 px-3 py-1 cursor-pointer hover:bg-transparent">
                 Submit
               </button>
             </div>
@@ -355,7 +368,7 @@
       <div class="text-center p-8" id="year">&copy;</div>
     </div> -->
     
-    <script src="index.js"></script>
+    <!-- <script src="index.js"></script> -->
   </body>
 </html>
           <!-- <i class="fa-brands fa-twitter"></i>
