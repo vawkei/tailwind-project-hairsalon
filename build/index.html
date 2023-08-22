@@ -18,8 +18,8 @@
     </script>
     <script type="text/javascript">
         (function(){
-          // emailjs.init("YOUR_PUBLIC_KEY");
           emailjs.init(process.env.PUBLIC_KEY);
+          //swap the process.env with the real code in the .env.local file
         })();
     </script>
   </head>
@@ -59,12 +59,12 @@
 
     <!-- <main class="mx-auto mt-28  max-w-4xl animate-bounce 20s linear infinite"> -->
       <main class="mx-auto mt-28  max-w-4xl">
-        <h1 class="fixed bottom-10 z-10 text-white animate-spin 1s infinite">HouseofwebZ</h1>
+        <small class="fixed bottom-10 z-10 text-white animate-spin 1s infinite hover:animate-none ">HouseofwebZ</small>
       <section class="p-4 scroll-mt-40 widescreen:section-min-height tallscreen:section-min-height animate-" id="hero">
       <div class=" text-center">
         <h1 class=" mb-4 -mt-1 text-4xl font-bold text-orange-300">Welcome To Kendra's Place</h1>
       </div>
-      <section class="-mt-8 flex flex-col-reverse justify-center items-center  sm:flex sm:flex-row sm:items-center p-6" id="second-hero-section">     
+      <section class="-mt-8 p-6 flex flex-col-reverse justify-center items-center  sm:flex sm:flex-row sm:items-center" id="second-hero-section">     
         <article class=" sm:w-1/2 p-8">
           <h1 class=" text-2xl text-center sm:text-4xl font-bold">
             Getting you to
@@ -86,68 +86,71 @@
       </section>
     </section>   
       <hr class="text-gray-950" />
-     
-      <section
-      class="mx-auto mb-12 max-w-4xl scroll-mt-24 widescreen:section-min-height tallscreen:section-min-height"
+
+      <section 
+      class="mx-auto mb-0 max-w-4xl scroll-mt-28 widescreen:section-min-height tallscreen:section-min-height"
         id="about"
         aria-label="main-about-section">
         <div class="mt-12 text-center">
           <h1 class="text-4xl mb-4 font-bold text-orange-300">About Us</h1>
         </div>
 
+        <!-- -mt-36 -->
         <section
-          class="flex items-center -mt-32 relative p-2 section-min-height"
+          class="flex mt-14 mb-0 pb-0  p-2  "
           aria-label="second-about-section">
           <figure class="hidden sm:block w-1/2 p-4">
             <img
-              class="rounded-lg shadow-2xl transition duration-500 ease-out hover:shadow-lg"
+              class="rounded-lg w-full h-52 shadow-2xl transition duration-500 ease-out hover:shadow-lg"
               src="img/10.jpg"
               alt="" />
             <h1 class="text-white">Years <br />Experience</h1>
           </figure>
 
-          <article class=" mb-40 w-full text-center sm:mb-0">
-            <h3>
+          <article class=" mb-0 w-full text-left  sm:mb-0">
+            <p class="p-4">
               We are a team of enthusiastic and experienced professionals who
               care about your beauty. High quality is all we deliver.
-            </h3>
-            <h3>
+            </p>
+            <p class="p-4">
               We specialize in not only female hair but to also that of the
               males.Here at Kendra's place.
-            </h3>
-            <button class="mt-4 rounded-md bg-orange-300 px-3 py-1 hover:bg-transparent transition duration-500 ease-out hover:text-yellow-500 hover:transition hover:duration-500 hover:ease-out" id="button">
-              Click Here to Read More
-            </button>
-            <section class="hidden ml-6 p-4 absolute top-100% right-8 sm:right-20" id="hidden">
-              <h2 class="text-2xl pb-4 ">Our Other Areas of speciality include:</h2>
-              <p class="text-xl p-4">Male Hair Barbing</p>
-              <p class="text-xl p-4">Nail and EyeLashes Fixing</p>
-              <p class="text-xl p-4">Body Piercing</p>
-              <p class="text-xl p-4">And Tattoo Drawings</p>
+            </p>
+            
+            <section class=" ml-0 text-left p-4  mb-0 pb-0" id="">
+              <h2 class="text-2xl pb-4 text-left">Our Other Areas of speciality include:</h2>
+              <ul class="m-0 p-0">
+                <li class="text-lg  mt-4 text-left">Male Hair Barbing</li>
+                <li class="text-lg  mt-4 text-left">Nail and EyeLashes Fixing</li>
+                <li class="text-lg  mt-4 text-left">Body Piercing</li>
+                <li class="text-lg  mt-4 text-left">And Tattoo Drawings</li>
+              </ul>
+              
             </section>
           </article>
+          
         </section>
       </section>
-      <hr class="text-gray-950" />
+      <hr class="text-gray-950 " />
 
       <section
         id="gallery"
         class="mx-auto mb-12 max-w-4xl scroll-mt-24 widescreen:section-min-height tallscreen:section-min-height"
         aria-label="main-services-section">
-        <div class="mt-8 text-center">
-          <h1 class="mb-4 text-4xl font-bold text-orange-300">Our Gallery</h1>
-          <p class="text-2xl">
+        <div class="mt-8 text-left">
+          <h1 class="mb-4 text-4xl text-center font-bold text-orange-300">Our Gallery</h1>
+          <p class="text-lg p-6  sm:text-2xl">
             We are dedicated to providing you with the best possible experience.
             Our team of experts is here to help you everystep of the way.
           </p>
         </div>
-
-        <section class="items-center p-2 section-min-height" id=""  aria-label="second-services-section">
+                                          
+        <section class="items-center p-2 " id=""  aria-label="second-services-section">
           <ul class="flex flex-col   sm:flex sm:flex-row sm:items-center gap-4 p-4" id="first-services-ul">
             <li>
               <img
                 src="img/hairsalon (7).jpeg"
-                class="h-48 w-full rounded-lg shadow-2xl sm:hover:transform sm:hover:scale-x-150"
+                class="h-48 w-full rounded-lg shadow-2xl sm:hover:transform transition ease-in-out duration-500 sm:hover:scale-x-150"
                 alt=""
                 id="image" />
                 
@@ -155,14 +158,14 @@
             <li>
               <img
                 src="img/salon area 2.jpeg"
-                class="h-48 w-full rounded-lg shadow-2xl sm:hover:transform sm:hover:scale-x-150"
+                class="h-48 w-full rounded-lg shadow-2xl sm:hover:transform transition ease-in-out duration-500 sm:hover:scale-x-150"
                 alt="" 
                 id="image"/>
             </li>
             <li>
               <img
                 src="img/massage acupuncture .jpeg"
-                class="h-48 w-full rounded-lg shadow-2xl sm:hover:transform sm:hover:scale-x-150"
+                class="h-48 w-full rounded-lg shadow-2xl sm:hover:transform transition ease-in-out duration-500 sm:hover:scale-x-150"
                 alt="" 
                 id="image"/>
             </li>
@@ -172,46 +175,48 @@
             <li>
               <img
                 src="img/salon beard .jpeg"
-                class="h-48 w-full rounded-lg shadow-2xl sm:hover:transform sm:hover:scale-x-150"
+                class="h-48 w-full rounded-lg shadow-2xl sm:hover:transform transition ease-in-out duration-500 sm:hover:scale-x-150"
                 alt="" 
                 id="image"/>
             </li>
             <li>
               <img
                 src="img/salon comb.jpeg"
-                class="h-48 w-full rounded-lg shadow-2xl sm:hover:transform sm:hover:scale-x-150"
+                class="h-48 w-full rounded-lg shadow-2xl sm:hover:transform transition ease-in-out duration-500 sm:hover:scale-x-150"
                 alt="" 
                 id="image"/>
             </li>
             <li>
               <img
                 src="img/salon haircut 2.jpeg"
-                class="h-48 w-full rounded-lg shadow-2xl sm:hover:transform sm:hover:scale-x-150"
+                class="h-48 w-full rounded-lg shadow-2xl sm:hover:transform  transition ease-in-out duration-500 sm:hover:scale-x-150"
                 alt="" 
                 id="image"/>
             </li>
           </ul>
+
           <ul
-            class="flex flex-col  items-center gap-4 p-4 sm:flex sm:flex-row"
+            class="flex flex-col sm:flex sm:flex-row sm:items-center gap-4 p-4"
             id="third-services-ul">
             <li>
               <img
-                src="img/hairsalon (2).jpeg"
-                class="h-52 w-72 rounded-lg shadow-2xl sm:hover:transform sm:hover:scale-x-150"
+                src="img/hairsalon (5).jpeg"
+                class="h-48 w-full rounded-lg shadow-2xl sm:hover:transform transition ease-in-out duration-500 sm:hover:scale-x-150"
+                alt=""
+                id="image" />
+              
+            </li>
+            <li>
+              <img
+                src="img/salon haircut 3.jpeg"
+                class="h-52 w-full rounded-lg shadow-2xl sm:hover:transform transition ease-in-out duration-500 sm:hover:scale-x-150"
                 alt="" 
                 id="image"/>
             </li>
             <li>
               <img
-                src="img/salon haircut 1.jpeg"
-                class="h-52 w-72 rounded-lg shadow-2xl sm:hover:transform sm:hover:scale-x-150"
-                alt="" 
-                id="image"/>
-            </li>
-            <li>
-              <img
-                src="img/salon cut.jpeg"
-                class="h-52 w-72 rounded-lg shadow-2xl sm:hover:transform sm:hover:scale-x-150"
+                src="img/salon facialmask 1.jpeg"
+                class="h-52 w-full rounded-lg shadow-2xl sm:hover:transform transition ease-in-out duration-500 sm:hover:scale-x-150"
                 alt="" 
                 id="image"/>
             </li>
@@ -275,7 +280,7 @@
       </section>
       <hr class="text-gray-950" />
 
-      <section class="mx-auto max-w-4xl mb-12 scroll-mt-28 widescreen:section-min-height tallscreen:section-min-height" id="working" aria-label="main-workinghrs-session">
+      <section class="mx-auto max-w-4x  sm:pb-0 scroll-mt-28 widescreen:section-min-height tallscreen:section-min-height" id="working" aria-label="main-workinghrs-session">
         
         <div class="mt-8 text-center">
           <h1 class="mb-4 text-4xl font-bold text-orange-300">Working Hours</h1>
@@ -302,9 +307,15 @@
 
       </section>
 
-      <hr class="text-gray-950" >
+      <hr class="text-gray-950 sm:mt-0" >
 
-      <section class=" mt-12  sm:mt-24 max-w-2xl mx-auto p-4 scroll-mt-40 widescreen:section-min-height tallscreen:section-min-height" id="contact">
+
+      <!-- <section
+        id="gallery"
+        class="mx-auto mb-12 mt-12 max-w-4xl scroll-mt-24 widescreen:section-min-height tallscreen:section-min-height"
+        aria-label="main-services-section"> -->
+
+      <section class=" mt-12 mx-auto sm:mt-24 max-w-2xl p-4 scroll-mt-40 widescreen:section-min-height tallscreen:section-min-height" id="contact">
         <h1 class=" mb-10 text-2xl font-bold text-orange-300 text-center">
           Send Us A Message ...
         </h1>
@@ -312,16 +323,25 @@
           <form action="" class="p-1" id="signup">
             <div class=" mt-0  ">
               <label for="" class="text-xl font-bold mb-2" id="label">Name :</label>
-              <input type="text" placeholder="please enter your name here!" class="w-full p-1 rounded-lg border-gray-300  text-black " id="name" />
+              <input type="text" placeholder="please enter your name here!" class="w-full p-1 rounded-lg border-gray-300  text-black " id="name"  />
             </div>
             <div class="mt-6 mb-2 ">
               <label for="" class="text-xl font-bold mb-2" id="label">E-mail :</label>
-              <input type="text" placeholder="please enter your email address here!" class="w-full p-1 rounded-lg border-gray-300  text-black" id="email" />
+              <input type="email" placeholder="please enter your email address here!" class="w-full p-1 rounded-lg border-gray-300  text-black" id="email"  />
+            </div>
+            <div class="mt-6 mb-2">
+              <label for="" class="text-xl font-bold mb-2" id="label">Subject</label>
+                  <input
+                    type="text"
+                    class="w-full p-1 rounded-lg border-gray-300  text-black"
+                    placeholder="subject of the email"
+                    id="subject"
+                  />
             </div>
             <div class="mt-6">
               <label for="" class="text-xl font-bold mb-2" id="label">Message:</label>
               <textarea
-                name="message"
+                
                 id="message"
                 rows="5"
                 class="w-full p-1 rounded-lg border-gray-300 text-black"
@@ -336,12 +356,12 @@
           </form>
         </section>
       </section>
-      <!-- <hr class="text-gray-950" > -->
+      <hr class="text-red-950" >
 
     </main>
     <section class=" bg-black w-full" id="contact" aria-label="footer-section">
-      <div class="-mt-36 sm:mt-8">
-        <ul class=" flex flex-col items-center justify-center p-8 gap-6">
+      <div class=" sm:mt-8">
+        <ul class=" flex flex-col items-center justify-center p-8 gap-6 mt-6">
           <li>
             <div  class="flex gap-1 items-center hover:text-orange-300">
               <i class="fa fa-map-marker"></i>
@@ -350,11 +370,12 @@
           </li>
           <li>
             <div >
-             <a href="tel: 08061521091" class="flex items-center gap-1 hover:text-orange-300" ><i class="fa fa-phone"></i><p>+234 706 923 9017</p></a> 
+             <a href="tel: 08061521091" class="flex items-center gap-1 hover:text-orange-300" ><i class="fa fa-phone"></i><p>+234 706 923 ****</p></a> 
             </div>
           </li>
           <div class="flex items-center gap-4">
-             <li class="text-2xl hover:transition duration-500 ease-out hover:scale-150"> <a href="https://www.instagram.com/nintendoamerica/?hl=en"><i class="fa fa-instagram "></i></a> </li>
+             <!-- <li class="text-2xl hover:transition duration-500 ease-out hover:scale-150"> <a href="https://www.instagram.com/nintendoamerica/?hl=en"><i class="fa fa-instagram "></i></a> </li> -->
+             <li class="text-2xl hover:transition duration-500 ease-out hover:scale-150"> <a href="https://www.instagram.com/houseofwebz" target="_blank"><i class="fa fa-instagram "></i></a> </li>
              
              <li class="text-2xl hover:transition duration-500 ease-out hover:translate-x-5"><a href="https://github.com/vawkei"><i class="fa fa-github"></i></a></li>      
           </div>

@@ -1,7 +1,6 @@
 {
   "name": "project-hair-salon",
   "version": "1.0.0",
-  "description": "",
   "main": "tailwind.config.js",
   "scripts": {
     "tailwind": "npx tailwindcss -i ./src/input.css -o ./build/css/style.css --watch",
@@ -9,5 +8,18 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "prettier": "^2.8.7",
+    "prettier-plugin-tailwindcss": "^0.2.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://vawkei@github.com/vawkei/tailwind-project-hairsalon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vawkei/tailwind-project-hairsalon/issues"
+  },
+  "homepage": "https://github.com/vawkei/tailwind-project-hairsalon#readme",
+  "description": ""
 }
