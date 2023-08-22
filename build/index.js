@@ -29,22 +29,25 @@ const newYear = (year.innerHTML += sentence);
 
 const form = document.getElementById("signup");
 const Name = document.getElementById("name");
+const subject = document.getElementById("subject");
 const email = document.getElementById("email");
 const message = document.getElementById("message");
 const errorMessage = document.getElementById("error-message");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  if (email.value === "" || Name.value === "" || message.value === "") {
+  if (subject.value === "" || email.value === "" || Name.value === "" || message.value === "") {
     console.log("inputs cant be empty");
     errorMessage.style.display = "block";
     return;
   }
-  const data = { email: email.value, name: Name.value, message: message.value };
-  // console.log(data)
-  // form.reset()
+  const data = { subject:subject.value, email: email.value, name: Name.value, message: message.value };
+  console.log(data)
+  form.reset()
+  
   const serviceId = process.env.SERVICE_ID;
   const templateId = process.env.TEMPLATE_ID;
+  //swap the process.env with the real code in the .env.local file
   emailjs
     .send(serviceId, templateId, data)
     .then((res) => {
@@ -55,18 +58,7 @@ form.addEventListener("submit", (e) => {
     .catch((error) => console.log(error));
 });
 
-// Coding The Click Her To Read More Button in About Us:
 
-const button = document.getElementById("button");
-const hidden = document.getElementById("hidden");
-
-button.addEventListener("click", function () {
-  if (hidden.classList.contains("hidden")) {
-    hidden.classList.remove("hidden");
-  } else {
-    hidden.classList.add("hidden");
-  }
-});
 //Coding the Toggle Mobile-Nav:
 const hamburgerBtn = document.querySelector("#hamburger-button");
 const mobileNav = document.querySelector("#hiddenMobileNav");
